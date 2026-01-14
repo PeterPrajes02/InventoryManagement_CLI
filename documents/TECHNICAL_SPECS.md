@@ -17,7 +17,7 @@
 
 ### FR-3: Update Inventory Item
 
-- The system shall allow the user to update an existing inventory item by ItemID.
+- The system shall allow the user to update an existing inventory item by ItemID..
 - The system shall validate that the item exists before updating.
 - Updated values shall be persisted to the database.
 

@@ -2,7 +2,7 @@
 
 ## Overview
 
-This Testing Plan defines how the **Inventory Management Console Application** will be validated to ensure correctness, reliability, and compliance with the documented requirements. Testing focuses primarily on **manual testing**, appropriate for a console-based beginner project, with optional automated checks where feasible.
+This Testing Plan defines how the **Inventory Management Console Application** will be validated to ensure correctness, reliability, and compliance with the documented requirements. Testing focuses primarily on **manual testing**, appropriate for a console-based beginner project, with optional automated checks where feasible..
 
 ---
 

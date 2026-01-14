@@ -4,7 +4,7 @@ This User Guide explains how to use the **Inventory Management CLI** application
 It is intended for end users who want to manage inventory items through a
 command-line interface.
 
-This guide reflects the **final, feature-complete version** of the system.
+This guide reflects the **final, feature-complete version** of the system..
 
 ---
 
@@ -26,6 +26,7 @@ The application runs entirely in the terminal and uses a local SQLite database.
 ## 2. Starting the Application
 
 ### Prerequisites
+
 - Node.js (v16 or higher)
 - npm
 
@@ -57,14 +58,17 @@ Use the arrow keys or number keys to select an option, then press Enter.
 ## 3. Viewing Inventory
 
 ### Menu Option
+
 ```
 View Inventory
 ```
 
 ### Description
+
 Displays all inventory items in a formatted table.
 
 ### Table Columns
+
 - **ID** – Unique identifier
 - **Name** – Item name
 - **Category** – Item category
@@ -72,6 +76,7 @@ Displays all inventory items in a formatted table.
 - **Location** – Storage location (if provided)
 
 ### Notes
+
 - Items are ordered by **ID (ascending)**
 - If no items exist, a friendly message is shown
 
@@ -80,24 +85,29 @@ Displays all inventory items in a formatted table.
 ## 4. Adding an Inventory Item
 
 ### Menu Option
+
 ```
 Add Inventory Item
 ```
 
 ### Required Fields
+
 - **Item name**
 - **Category**
 - **Quantity**
 
 ### Optional Field
+
 - **Location**
 
 ### Validation Rules
+
 - Name and category must contain **at least one letter**
 - Quantity must be a **non-negative integer**
 - Validation errors appear immediately after input
 
 ### Example
+
 ```
 Item name: Keyboard
 Category: Electronics
@@ -106,6 +116,7 @@ Location (optional): Warehouse A
 ```
 
 ### Result
+
 A success message confirms the item was added.
 
 ---
@@ -113,20 +124,24 @@ A success message confirms the item was added.
 ## 5. Updating an Inventory Item
 
 ### Menu Option
+
 ```
 Update Inventory Item
 ```
 
 ### Steps
+
 1. Enter the **Item ID** to update
 2. Provide new values or press Enter to keep existing values
 
 ### Validation
+
 - Item ID must exist
 - Updated values follow the same validation rules as adding an item
 - Partial updates are supported
 
 ### Example
+
 ```
 Enter Item ID to update: 3
 New name (Keyboard):
@@ -136,6 +151,7 @@ New location (Warehouse A):
 ```
 
 ### Result
+
 The selected fields are updated successfully.
 
 ---
@@ -143,22 +159,26 @@ The selected fields are updated successfully.
 ## 6. Deleting an Inventory Item
 
 ### Menu Option
+
 ```
 Delete Inventory Item
 ```
 
 ### Safety Measures
+
 - User must confirm deletion
 - Invalid IDs are handled safely
 - Cancellation leaves data unchanged
 
 ### Example
+
 ```
 Enter Item ID to delete: 5
 Are you sure you want to delete this item? (y/N)
 ```
 
 ### Result
+
 - Confirmed → item is deleted
 - Cancelled → no changes made
 
@@ -167,11 +187,13 @@ Are you sure you want to delete this item? (y/N)
 ## 7. Filtering & Searching Inventory
 
 ### Menu Option
+
 ```
 Filter / Search Inventory
 ```
 
 ### Available Filters
+
 - Name (partial match)
 - Category
 - Location
@@ -179,11 +201,13 @@ Filter / Search Inventory
 - Maximum quantity
 
 ### Notes
+
 - Filters can be combined
 - Quantity range is validated
 - Empty filters return all items
 
 ### Example
+
 ```
 Name: Test
 Category: Test Category
@@ -192,7 +216,9 @@ Maximum quantity: 50
 ```
 
 ### No Results
+
 If no items match the criteria, the system displays:
+
 ```
 No matching inventory items found.
 ```
@@ -204,6 +230,7 @@ No matching inventory items found.
 The system supports exporting inventory data to a JSON file.
 
 ### Details
+
 - File includes timestamp, total items, and inventory list
 - Stored in the `data/` directory
 - Intended for reporting or debugging
@@ -224,6 +251,7 @@ The CLI is designed to be safe and user-friendly:
 ## 10. Exiting the Application
 
 ### Menu Option
+
 ```
 Exit
 ```

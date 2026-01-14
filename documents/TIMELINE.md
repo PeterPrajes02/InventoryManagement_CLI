@@ -2,7 +2,7 @@
 
 ## Overview
 
-This timeline outlines the complete development lifecycle of the **Inventory Management Console Application**, from planning through final submission. The estimates assume a beginner-to-junior developer working part-time and emphasize correctness, learning, and documentation quality over speed.
+This timeline outlines the complete development lifecycle of the **Inventory Management Console Application**, from planning through final submission. The estimates assume a beginner-to-junior developer working part-time and emphasize correctness, learning, and documentation quality over speed..
 
 ---
 

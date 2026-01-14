@@ -12,7 +12,7 @@ The system is composed of five main layers:
 2. **Application / Service Layer** – Contains business rules, validation logic, and workflow coordination.
 3. **Data Access Layer (Repository)** – Abstracts database operations and shields the rest of the system from SQL-specific logic.
 4. **Database Layer (SQLite)** – Provides persistent storage for inventory data.
-5. **File System Layer (JSON Handling)** – Manages configuration loading and JSON-based reporting/export features.
+5. **File System Layer (JSON Handling)** – Manages configuration loading and JSON-based reporting/export features..
 
 This architecture ensures that:
 

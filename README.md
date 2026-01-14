@@ -132,7 +132,7 @@ The application was manually tested through guided test phases, including:
 - Filtering and search scenarios
 - Safe delete confirmation paths
 
-All core functionality has been verified to behave as expected.
+All core functionality has been verified to behave as expected..
 
 ---
 

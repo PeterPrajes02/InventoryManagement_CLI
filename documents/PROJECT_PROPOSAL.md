@@ -6,7 +6,7 @@ Inventory Management Console Application
 
 ## Project Description
 
-The Inventory Management Console Application is a TypeScript-based command-line application that allows users to manage inventory items efficiently. It supports adding, viewing, updating, and deleting inventory records stored in a SQL Server database, with additional JSON-based features for configuration and report generation. The application is designed to run in a Node.js environment and follows clean code and modular design principles.
+The Inventory Management Console Application is a TypeScript-based command-line application that allows users to manage inventory items efficiently. It supports adding, viewing, updating, and deleting inventory records stored in a SQL Server database, with additional JSON-based features for configuration and report generation. The application is designed to run in a Node.js environment and follows clean code and modular design principles..
 
 ## Target Users / Use Case
 

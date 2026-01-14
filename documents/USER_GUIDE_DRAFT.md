@@ -2,7 +2,7 @@
 
 ## Overview
 
-This guide explains how to install, configure, and use the **Inventory Management Console Application**. The application runs in a Node.js environment and allows users to manage inventory data through a command-line interface (CLI).
+This guide explains how to install, configure, and use the **Inventory Management Console Application**. The application runs in a Node.js environment and allows users to manage inventory data through a command-line interface (CLI)..
 
 ---
 
