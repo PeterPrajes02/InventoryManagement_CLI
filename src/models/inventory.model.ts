@@ -1,3 +1,4 @@
+//
 import { InventoryItem } from "../types/inventory.types";
 
 export class InventoryItemModel implements InventoryItem {
