@@ -13,7 +13,7 @@
  * - Access the database directly
  * - Contain business rules
  */
-
+//
 import inquirer from "inquirer";
 import { InventoryService } from "../services/inventory.service";
 import { verifyDatabase, db } from "../database/db";
