@@ -16,7 +16,7 @@
 //
 import inquirer from "inquirer";
 import { InventoryService } from "../services/inventory.service";
-import { verifyDatabase, db } from "../database/db";
+import { initializeDatabase, verifyDatabase, db } from "../database/db";
 import { InventoryViewItem } from "../types/inventory.types";
 
 /* -------------------------------------------------------------------------- */
@@ -30,6 +30,10 @@ import { InventoryViewItem } from "../types/inventory.types";
  */
 async function startApp(): Promise<void> {
   try {
+    // 1. Create tables if they don't exist
+    await initializeDatabase();
+
+    // 2. Verify schema (optional but good for safety)
     await verifyDatabase();
   } catch (error) {
     console.error("❌ Database check failed:", (error as Error).message);
@@ -60,6 +64,7 @@ async function showMenu(): Promise<void> {
         "Update Inventory Item",
         "Delete Inventory Item",
         "Filter / Search Inventory",
+        "Export to JSON",
         "Exit",
       ],
     },
@@ -84,6 +89,10 @@ async function showMenu(): Promise<void> {
 
     case "Filter / Search Inventory":
       await filterInventory();
+      break;
+
+    case "Export to JSON":
+      await exportInventoryToJson();
       break;
 
     case "Exit":
@@ -318,6 +327,22 @@ async function deleteInventoryItem(): Promise<void> {
   } catch (error) {
     console.error(
       "\n❌ Failed to delete item:",
+      (error as Error).message,
+      "\n"
+    );
+  }
+}
+
+/**
+ * Exports the inventory to a JSON file.
+ */
+async function exportInventoryToJson(): Promise<void> {
+  try {
+    await InventoryService.exportInventoryToJson();
+    console.log("\n📄 Inventory exported to JSON successfully.\n");
+  } catch (error) {
+    console.error(
+      "\n❌ Failed to export inventory:",
       (error as Error).message,
       "\n"
     );
