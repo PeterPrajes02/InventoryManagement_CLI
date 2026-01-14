@@ -18,6 +18,7 @@
  * - Contain SQL queries
  */
 
+import { JsonHandler } from "../utils/json.handler";
 import { InventoryRepository } from "../repositories/inventory.repository";
 import {
   InventoryItem,
@@ -225,5 +226,26 @@ export class InventoryService {
       minQuantity: filters.minQuantity,
       maxQuantity: filters.maxQuantity,
     });
+  }
+
+  /* ------------------------------------------------------------------------ */
+  /*                           EXPORT OPERATION                                */
+  /* ------------------------------------------------------------------------ */
+  /**
+   * Export the current inventory to a JSON file.
+   * Behavior:
+   * - Retrieves all inventory items in view format
+   * - Writes them to a JSON file using JsonHandler utility
+   * - Throws an error if there are no items to export
+   * @throws Error if no inventory items exist
+   */
+  static async exportInventoryToJson(): Promise<void> {
+    const items = await this.getInventoryView();
+
+    if (items.length === 0) {
+      throw new Error("No inventory items to export");
+    }
+
+    JsonHandler.writeInventoryReport(items);
   }
 }
