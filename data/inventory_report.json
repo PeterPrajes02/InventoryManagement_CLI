@@ -1,0 +1,67 @@
+{
+  "generatedAt": "2026-01-12T06:50:34.434Z",
+  "totalItems": 9,
+  "items": [
+    {
+      "itemId": 1,
+      "name": "Test Item",
+      "category": "Test Category",
+      "quantity": 5,
+      "location": "Test Location"
+    },
+    {
+      "itemId": 2,
+      "name": "Test Item",
+      "category": "Test Category",
+      "quantity": 5,
+      "location": "Test Location"
+    },
+    {
+      "itemId": 3,
+      "name": "asdf",
+      "category": "asdf",
+      "quantity": 123,
+      "location": "qwert"
+    },
+    {
+      "itemId": 4,
+      "name": "Tae",
+      "category": "Test Category",
+      "quantity": 3
+    },
+    {
+      "itemId": 5,
+      "name": "2",
+      "category": "1",
+      "quantity": 2,
+      "location": "2"
+    },
+    {
+      "itemId": 6,
+      "name": "2d",
+      "category": "d",
+      "quantity": 2,
+      "location": "3"
+    },
+    {
+      "itemId": 7,
+      "name": "Anak",
+      "category": "3dede",
+      "quantity": 90
+    },
+    {
+      "itemId": 8,
+      "name": "asd",
+      "category": "asd",
+      "quantity": 3,
+      "location": "asd"
+    },
+    {
+      "itemId": 10,
+      "name": "AddTest",
+      "category": "asdfasdf",
+      "quantity": 25,
+      "location": "Phase2"
+    }
+  ]
+}
