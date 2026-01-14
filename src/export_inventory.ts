@@ -1,7 +1,7 @@
 import { verifyDatabase, db } from "./database/db";
 import { InventoryService } from "./services/inventory.service";
 import { JsonHandler } from "./utils/json.handler";
-
+//
 (async () => {
   try {
     await verifyDatabase();
